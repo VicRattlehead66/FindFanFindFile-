@@ -1,0 +1,56 @@
+C:\Users\user\source\repos\FormsTry1\FormsTry1\bin\Debug\FormsTry1.exe.config
+C:\Users\user\source\repos\FormsTry1\FormsTry1\bin\Debug\FormsTry1.exe
+C:\Users\user\source\repos\FormsTry1\FormsTry1\bin\Debug\FormsTry1.pdb
+C:\Users\user\source\repos\FormsTry1\FormsTry1\obj\Debug\FormsTry1.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\FormsTry1\FormsTry1\obj\Debug\FormsTry1.Form1.resources
+C:\Users\user\source\repos\FormsTry1\FormsTry1\obj\Debug\FormsTry1.Properties.Resources.resources
+C:\Users\user\source\repos\FormsTry1\FormsTry1\obj\Debug\FormsTry1.csproj.GenerateResource.Cache
+C:\Users\user\source\repos\FormsTry1\FormsTry1\obj\Debug\FormsTry1.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\FormsTry1\FormsTry1\obj\Debug\FormsTry1.exe
+C:\Users\user\source\repos\FormsTry1\FormsTry1\obj\Debug\FormsTry1.pdb
+C:\Users\user\Downloads\FormsTry1\FormsTry1\FormsTry1\bin\Debug\FormsTry1.exe.config
+C:\Users\user\Downloads\FormsTry1\FormsTry1\FormsTry1\bin\Debug\FormsTry1.exe
+C:\Users\user\Downloads\FormsTry1\FormsTry1\FormsTry1\bin\Debug\FormsTry1.pdb
+C:\Users\user\Downloads\FormsTry1\FormsTry1\FormsTry1\obj\Debug\FormsTry1.csprojResolveAssemblyReference.cache
+C:\Users\user\Downloads\FormsTry1\FormsTry1\FormsTry1\obj\Debug\FormsTry1.Form1.resources
+C:\Users\user\Downloads\FormsTry1\FormsTry1\FormsTry1\obj\Debug\FormsTry1.Properties.Resources.resources
+C:\Users\user\Downloads\FormsTry1\FormsTry1\FormsTry1\obj\Debug\FormsTry1.csproj.GenerateResource.Cache
+C:\Users\user\Downloads\FormsTry1\FormsTry1\FormsTry1\obj\Debug\FormsTry1.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\FormsTry1\FormsTry1\FormsTry1\obj\Debug\FormsTry1.exe
+C:\Users\user\Downloads\FormsTry1\FormsTry1\FormsTry1\obj\Debug\FormsTry1.pdb
+C:\Users\Itai Bieber\Downloads\FormsTry1 (1)\FormsTry1\FormsTry1\bin\Debug\FormsTry1.exe.config
+C:\Users\Itai Bieber\Downloads\FormsTry1 (1)\FormsTry1\FormsTry1\obj\Debug\FormsTry1.exe
+C:\Users\Itai Bieber\Downloads\FormsTry1 (1)\FormsTry1\FormsTry1\obj\Debug\FormsTry1.pdb
+C:\Users\Itai Bieber\Downloads\FormsTry1 (1)\FormsTry1\FormsTry1\bin\Debug\FormsTry1.exe
+C:\Users\Itai Bieber\Downloads\FormsTry1 (1)\FormsTry1\FormsTry1\bin\Debug\FormsTry1.pdb
+C:\Users\Itai Bieber\Downloads\FormsTry1 (1)\FormsTry1\FormsTry1\obj\Debug\FormsTry1.csprojResolveAssemblyReference.cache
+C:\Users\Itai Bieber\Downloads\FormsTry1 (1)\FormsTry1\FormsTry1\obj\Debug\FormsTry1.Form1.resources
+C:\Users\Itai Bieber\Downloads\FormsTry1 (1)\FormsTry1\FormsTry1\obj\Debug\FormsTry1.Properties.Resources.resources
+C:\Users\Itai Bieber\Downloads\FormsTry1 (1)\FormsTry1\FormsTry1\obj\Debug\FormsTry1.csproj.GenerateResource.Cache
+C:\Users\Itai Bieber\Downloads\FormsTry1 (1)\FormsTry1\FormsTry1\bin\Debug\aga.controls.dll
+C:\Users\user\Downloads\FormsTry1\FormsTry1\bin\Debug\FormsTry1.exe.config
+C:\Users\user\Downloads\FormsTry1\FormsTry1\obj\Debug\FormsTry1.exe
+C:\Users\user\Downloads\FormsTry1\FormsTry1\obj\Debug\FormsTry1.pdb
+C:\Users\user\Downloads\FormsTry1\FormsTry1\bin\Debug\FormsTry1.exe
+C:\Users\user\Downloads\FormsTry1\FormsTry1\bin\Debug\FormsTry1.pdb
+C:\Users\user\Downloads\FormsTry1\FormsTry1\obj\Debug\FormsTry1.Form1.resources
+C:\Users\user\Downloads\FormsTry1\FormsTry1\obj\Debug\FormsTry1.Properties.Resources.resources
+C:\Users\user\Downloads\FormsTry1\FormsTry1\obj\Debug\FormsTry1.csproj.GenerateResource.Cache
+C:\Users\user\Downloads\FormsTry1\FormsTry1\obj\Debug\FormsTry1.csprojAssemblyReference.cache
+C:\Users\user\Downloads\FormsTry1\FormsTry1\obj\Debug\FormsTry1.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\FormsTry1\FormsTry1\bin\Debug\ObjectListView.dll
+C:\Users\user\Downloads\FormsTry1\FormsTry1\bin\Debug\ObjectListView.pdb
+C:\Users\user\Downloads\FormsTry1\FormsTry1\bin\Debug\ObjectListView.xml
+C:\Users\user\Downloads\FormsTry1\FormsTry1\obj\Debug\FormsTry1.csproj.CopyComplete
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\bin\Debug\FormsTry1.exe.config
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Debug\FormsTry1.exe
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Debug\FormsTry1.pdb
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\bin\Debug\FormsTry1.exe
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\bin\Debug\FormsTry1.pdb
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Debug\FormsTry1.csprojResolveAssemblyReference.cache
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Debug\FormsTry1.Properties.Resources.resources
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Debug\FormsTry1.csproj.GenerateResource.Cache
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Debug\FormsTry1.MainForm.resources
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Debug\FormsTry1.ChooseFilesForm2.resources
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Debug\FormsTry1.FileChoiceForm.resources
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Debug\FormsTry1.Fan_Control.resources
