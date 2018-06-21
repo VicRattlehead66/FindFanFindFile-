@@ -50,7 +50,6 @@ namespace FormsTry1
             {
                 Id[1] = mo.Properties["Name"].Value.ToString();
                 Id[2] = mo.Properties["Status"].Value.ToString();
-                //Id[4] = (Convert.ToDouble(mo.Properties["CurrentVoltage"].Value) / 10).ToString() + " volts";
                 break;
             }
             foreach (ManagementObject obj in temp.Get())

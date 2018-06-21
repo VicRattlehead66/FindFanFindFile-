@@ -54,3 +54,4 @@ C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\De
 C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Debug\FormsTry1.ChooseFilesForm2.resources
 C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Debug\FormsTry1.FileChoiceForm.resources
 C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Debug\FormsTry1.Fan_Control.resources
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Debug\FormsTry1.TrustInfo.xml

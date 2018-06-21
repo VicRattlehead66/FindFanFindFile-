@@ -30,8 +30,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.nameColumn = new Aga.Controls.Tree.TreeColumn();
-            this.valueColumn = new Aga.Controls.Tree.TreeColumn();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabComp = new System.Windows.Forms.TabPage();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -49,7 +47,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabFolderComparison = new System.Windows.Forms.TabPage();
-            this.resultBox = new System.Windows.Forms.TextBox();
             this.folderCheckBtn = new System.Windows.Forms.Button();
             this.buttonFolder2 = new System.Windows.Forms.Button();
             this.buttonFolder1 = new System.Windows.Forms.Button();
@@ -63,27 +60,13 @@
             this.tabFolderComparison.SuspendLayout();
             this.SuspendLayout();
             // 
-            // nameColumn
-            // 
-            this.nameColumn.Header = "Name";
-            this.nameColumn.Sortable = true;
-            this.nameColumn.SortOrder = System.Windows.Forms.SortOrder.Ascending;
-            this.nameColumn.TooltipText = null;
-            // 
-            // valueColumn
-            // 
-            this.valueColumn.Header = "Value";
-            this.valueColumn.Sortable = true;
-            this.valueColumn.SortOrder = System.Windows.Forms.SortOrder.None;
-            this.valueColumn.TooltipText = null;
-            // 
             // tabComp
             // 
             this.tabComp.Controls.Add(this.listView1);
             this.tabComp.Location = new System.Drawing.Point(4, 22);
             this.tabComp.Name = "tabComp";
             this.tabComp.Padding = new System.Windows.Forms.Padding(3);
-            this.tabComp.Size = new System.Drawing.Size(481, 363);
+            this.tabComp.Size = new System.Drawing.Size(481, 254);
             this.tabComp.TabIndex = 1;
             this.tabComp.Text = "Components";
             this.tabComp.UseVisualStyleBackColor = true;
@@ -98,7 +81,7 @@
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.Location = new System.Drawing.Point(3, 3);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(475, 357);
+            this.listView1.Size = new System.Drawing.Size(475, 248);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -136,16 +119,17 @@
             this.tabFileCmpr.Location = new System.Drawing.Point(4, 22);
             this.tabFileCmpr.Name = "tabFileCmpr";
             this.tabFileCmpr.Padding = new System.Windows.Forms.Padding(3);
-            this.tabFileCmpr.Size = new System.Drawing.Size(481, 363);
+            this.tabFileCmpr.Size = new System.Drawing.Size(481, 276);
             this.tabFileCmpr.TabIndex = 0;
             this.tabFileCmpr.Text = "File Comparison";
             this.tabFileCmpr.UseVisualStyleBackColor = true;
             // 
             // browseBtn2
             // 
+            this.browseBtn2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.browseBtn2.Location = new System.Drawing.Point(394, 42);
             this.browseBtn2.Name = "browseBtn2";
-            this.browseBtn2.Size = new System.Drawing.Size(77, 29);
+            this.browseBtn2.Size = new System.Drawing.Size(77, 26);
             this.browseBtn2.TabIndex = 6;
             this.browseBtn2.Text = "Browse";
             this.browseBtn2.UseVisualStyleBackColor = true;
@@ -153,9 +137,10 @@
             // 
             // browseBtn1
             // 
+            this.browseBtn1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.browseBtn1.Location = new System.Drawing.Point(394, 7);
             this.browseBtn1.Name = "browseBtn1";
-            this.browseBtn1.Size = new System.Drawing.Size(77, 31);
+            this.browseBtn1.Size = new System.Drawing.Size(77, 26);
             this.browseBtn1.TabIndex = 5;
             this.browseBtn1.Text = "Browse";
             this.browseBtn1.UseVisualStyleBackColor = true;
@@ -163,18 +148,18 @@
             // 
             // textBoxSingleFile1
             // 
-            this.textBoxSingleFile1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSingleFile1.Location = new System.Drawing.Point(63, 7);
+            this.textBoxSingleFile1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSingleFile1.Location = new System.Drawing.Point(75, 7);
             this.textBoxSingleFile1.Name = "textBoxSingleFile1";
-            this.textBoxSingleFile1.Size = new System.Drawing.Size(325, 31);
+            this.textBoxSingleFile1.Size = new System.Drawing.Size(313, 26);
             this.textBoxSingleFile1.TabIndex = 0;
             // 
             // textBoxSingleFile2
             // 
-            this.textBoxSingleFile2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSingleFile2.Location = new System.Drawing.Point(63, 42);
+            this.textBoxSingleFile2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSingleFile2.Location = new System.Drawing.Point(75, 42);
             this.textBoxSingleFile2.Name = "textBoxSingleFile2";
-            this.textBoxSingleFile2.Size = new System.Drawing.Size(325, 31);
+            this.textBoxSingleFile2.Size = new System.Drawing.Size(313, 26);
             this.textBoxSingleFile2.TabIndex = 1;
             // 
             // dupeCheckBtn
@@ -185,7 +170,7 @@
             this.dupeCheckBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dupeCheckBtn.Font = new System.Drawing.Font("Gloucester MT Extra Condensed", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dupeCheckBtn.ForeColor = System.Drawing.Color.Firebrick;
-            this.dupeCheckBtn.Location = new System.Drawing.Point(3, 174);
+            this.dupeCheckBtn.Location = new System.Drawing.Point(3, 87);
             this.dupeCheckBtn.Name = "dupeCheckBtn";
             this.dupeCheckBtn.Size = new System.Drawing.Size(475, 186);
             this.dupeCheckBtn.TabIndex = 2;
@@ -196,20 +181,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label2.Location = new System.Drawing.Point(8, 45);
+            this.label2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(4, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 20);
+            this.label2.Size = new System.Drawing.Size(72, 19);
             this.label2.TabIndex = 4;
             this.label2.Text = "File 2:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label1.Location = new System.Drawing.Point(8, 11);
+            this.label1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(4, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.Size = new System.Drawing.Size(72, 19);
             this.label1.TabIndex = 3;
             this.label1.Text = "File 1:";
             // 
@@ -222,12 +207,11 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(489, 389);
+            this.tabControl1.Size = new System.Drawing.Size(489, 302);
             this.tabControl1.TabIndex = 5;
             // 
             // tabFolderComparison
             // 
-            this.tabFolderComparison.Controls.Add(this.resultBox);
             this.tabFolderComparison.Controls.Add(this.folderCheckBtn);
             this.tabFolderComparison.Controls.Add(this.buttonFolder2);
             this.tabFolderComparison.Controls.Add(this.buttonFolder1);
@@ -236,24 +220,18 @@
             this.tabFolderComparison.Location = new System.Drawing.Point(4, 22);
             this.tabFolderComparison.Name = "tabFolderComparison";
             this.tabFolderComparison.Padding = new System.Windows.Forms.Padding(3);
-            this.tabFolderComparison.Size = new System.Drawing.Size(481, 363);
+            this.tabFolderComparison.Size = new System.Drawing.Size(481, 254);
             this.tabFolderComparison.TabIndex = 2;
             this.tabFolderComparison.Text = "Folder Comparison";
             this.tabFolderComparison.UseVisualStyleBackColor = true;
             // 
-            // resultBox
-            // 
-            this.resultBox.Location = new System.Drawing.Point(3, 113);
-            this.resultBox.Name = "resultBox";
-            this.resultBox.Size = new System.Drawing.Size(465, 20);
-            this.resultBox.TabIndex = 5;
-            // 
             // folderCheckBtn
             // 
             this.folderCheckBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.folderCheckBtn.Location = new System.Drawing.Point(3, 210);
+            this.folderCheckBtn.Font = new System.Drawing.Font("Consolas", 20F, System.Drawing.FontStyle.Bold);
+            this.folderCheckBtn.Location = new System.Drawing.Point(3, 115);
             this.folderCheckBtn.Name = "folderCheckBtn";
-            this.folderCheckBtn.Size = new System.Drawing.Size(475, 150);
+            this.folderCheckBtn.Size = new System.Drawing.Size(475, 136);
             this.folderCheckBtn.TabIndex = 4;
             this.folderCheckBtn.Text = "Check Folders";
             this.folderCheckBtn.UseVisualStyleBackColor = true;
@@ -261,6 +239,7 @@
             // 
             // buttonFolder2
             // 
+            this.buttonFolder2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonFolder2.Location = new System.Drawing.Point(377, 78);
             this.buttonFolder2.Name = "buttonFolder2";
             this.buttonFolder2.Size = new System.Drawing.Size(96, 29);
@@ -271,6 +250,7 @@
             // 
             // buttonFolder1
             // 
+            this.buttonFolder1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonFolder1.Location = new System.Drawing.Point(377, 36);
             this.buttonFolder1.Name = "buttonFolder1";
             this.buttonFolder1.Size = new System.Drawing.Size(96, 29);
@@ -281,25 +261,25 @@
             // 
             // textBoxFolder2
             // 
-            this.textBoxFolder2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.textBoxFolder2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFolder2.Location = new System.Drawing.Point(8, 78);
             this.textBoxFolder2.Name = "textBoxFolder2";
-            this.textBoxFolder2.Size = new System.Drawing.Size(363, 29);
+            this.textBoxFolder2.Size = new System.Drawing.Size(363, 26);
             this.textBoxFolder2.TabIndex = 1;
             // 
             // textBoxFolder1
             // 
-            this.textBoxFolder1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.textBoxFolder1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFolder1.Location = new System.Drawing.Point(8, 36);
             this.textBoxFolder1.Name = "textBoxFolder1";
-            this.textBoxFolder1.Size = new System.Drawing.Size(363, 29);
+            this.textBoxFolder1.Size = new System.Drawing.Size(363, 26);
             this.textBoxFolder1.TabIndex = 0;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 389);
+            this.ClientSize = new System.Drawing.Size(489, 302);
             this.Controls.Add(this.tabControl1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "MainForm";
@@ -317,8 +297,6 @@
 
         #endregion
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private Aga.Controls.Tree.TreeColumn nameColumn;
-        private Aga.Controls.Tree.TreeColumn valueColumn;
         private System.Windows.Forms.TabPage tabComp;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader componentHeader;
@@ -341,7 +319,6 @@
         private System.Windows.Forms.TextBox textBoxFolder1;
         private System.Windows.Forms.Button folderCheckBtn;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
-        private System.Windows.Forms.TextBox resultBox;
         private System.Windows.Forms.Timer timer1;
     }
 }

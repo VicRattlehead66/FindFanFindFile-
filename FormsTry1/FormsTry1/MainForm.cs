@@ -8,8 +8,10 @@ namespace FormsTry1
     public partial class MainForm : Form
     {
         private HardwareData hardware;
+        bool runFlag;
         public MainForm()
         {
+            runFlag = true;
             hardware = new HardwareData();
             InitializeComponent();
             timer1.Tick += new EventHandler(timer_Tick); // Everytime timer ticks, timer_Tick will be called
@@ -151,7 +153,6 @@ namespace FormsTry1
                         fs2.Close();
 
                         // Return false to indicate files are different
-                        //MessageBox.Show("The files " + file1 + " and " + file2 + "are not identical.");
                         continue;
                     }
 
@@ -177,10 +178,6 @@ namespace FormsTry1
                     if ((file1byte - file2byte) == 0)
                     {
                         identicalFiles.Add(new string[] { file1, file2 });
-                    }
-                    else
-                    {
-                        MessageBox.Show("The files " + file1 + " and " + file2 + "are not identical.");
                     }
                 }
             }
@@ -266,18 +263,9 @@ namespace FormsTry1
                 MessageBox.Show("Please enter a path for both fields");
                 return;
             }
-            // Compare the two files that referenced in the textbox controls.
-            string[][] identicalFiles = folderCompare(textBoxFolder1.Text, textBoxFolder2.Text).ToArray();
-            FileChoiceForm choiceForm = new FileChoiceForm(textBoxFolder1.Text, textBoxFolder2.Text, identicalFiles);
-            choiceForm.Show();
-            foreach (string[] i in identicalFiles)
-            {
-
-                //resultBox.AppendText(Path.GetFileName(i[0]) + " = " + Path.GetFileName(i[1]) );
-                //resultBox.AppendText(" || ");
+            FileChoiceForm cForm = fireUpFileChoice();
 
 
-            }
 
         }
         #endregion
@@ -295,6 +283,26 @@ namespace FormsTry1
         }
         #endregion
 
+
+        FileChoiceForm fireUpFileChoice()
+        {
+            string[][] resultFiles = folderCompare(textBoxFolder1.Text, textBoxFolder2.Text).ToArray();
+            string[][] identicalFiles = new string[2][];
+            string[] identicalFiles1 = new string[resultFiles.GetLength(0)];
+            string[] identicalFiles2 = new string[resultFiles.GetLength(0)];
+            for (int i = 0; i < resultFiles.GetLength(0); i++)
+            {
+                identicalFiles1[i] = resultFiles[i][0];
+                identicalFiles2[i] = resultFiles[i][1];
+            }
+            identicalFiles[0] = identicalFiles1;
+            identicalFiles[1] = identicalFiles2;
+            FileChoiceForm choiceForm = new FileChoiceForm(textBoxFolder1.Text, textBoxFolder2.Text, identicalFiles);
+
+            if (identicalFiles != null) { choiceForm.Show(); }
+
+            return choiceForm;
+        }
 
         void RefreshListview()
         {
@@ -325,8 +333,6 @@ namespace FormsTry1
                 listView1.Items.Add(new ListViewItem(hardware.GetInfoBasedText(i)));
             }
             ////listView1.Columns[1].Width = TextRenderer.MeasureText(row[1], Font).Width; //Gets length of the "name" column
-            
-
         }
         #endregion
     }

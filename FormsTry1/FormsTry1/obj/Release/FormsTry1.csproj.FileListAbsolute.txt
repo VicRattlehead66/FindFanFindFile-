@@ -1,0 +1,7 @@
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\bin\Release\FormsTry1.exe.config
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Release\FormsTry1.ChooseFilesForm2.resources
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Release\FormsTry1.Fan_Control.resources
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Release\FormsTry1.FileChoiceForm.resources
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Release\FormsTry1.MainForm.resources
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Release\FormsTry1.Properties.Resources.resources
+C:\Users\Itai Bieber\Documents\GitHub\FindFanFindFile\FormsTry1\FormsTry1\obj\Release\FormsTry1.csproj.GenerateResource.Cache
