@@ -2,36 +2,25 @@
 using System.Windows.Forms;
 using System.IO;
 using System.Collections.Generic;
-using System.Threading;
 
 namespace FormsTry1
 {
     public partial class MainForm : Form
     {
         private HardwareData hardware;
-        delegate void RefreshListDelegate();
-        delegate void AddItemDelegate(object sender, EventArgs e);
-
         public MainForm()
         {
             hardware = new HardwareData();
             InitializeComponent();
             timer1.Tick += new EventHandler(timer_Tick); // Everytime timer ticks, timer_Tick will be called
-            timer1.Interval = (10) * (1);                // Timer will tick evert second
+            timer1.Interval = (5000) * (1);              // Timer will tick evert second
             timer1.Enabled = true;                       // Enable the timer
-            
+            timer1.Start();                              // Start the timer   
         }
 
         void timer_Tick(object sender, EventArgs e)
         {
-            // update list asynchronously
-
-            RefreshListDelegate refreshList = new RefreshListDelegate(RefreshListview);
-            Thread ulist = new Thread(() => listView1.BeginInvoke(refreshList));
-            ulist.Name = "YOU ARE MINE";
-            ulist.Start();
-            
-
+            RefreshListview();
         }
 
         #region File comparison
@@ -295,10 +284,10 @@ namespace FormsTry1
         #region List view fan entry clicked function
         private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (listView1.SelectedItems.Count > 0)
+            if (listView1.SelectedItems.Count > 0 && listView1.SelectedItems[0].Text == "Fan")
             {
                 ListViewItem item = listView1.SelectedItems[0];
-                Fan_Control chosenFan = new Fan_Control("@");
+                Fan_Control chosenFan = new Fan_Control(hardware.GetInfoBasedText(1)[4], (hardware.GetInfoBasedText(1)[5]), (hardware.GetInfoBasedText(1)[7]));
                 chosenFan.Text = item.Text;
                 chosenFan.Show();
             }
@@ -307,18 +296,13 @@ namespace FormsTry1
         #endregion
 
 
-        private void RefreshListMethod()
+        void RefreshListview()
         {
-            
-        }
-
-        private void RefreshListview()
-        {
-            int count = 1;
             foreach (ListViewItem item in listView1.Items)
             {
-                item.SubItems[2].Text = hardware.GetInfoBasedText(item.Index)[2];
-                item.SubItems[3].Text = count++.ToString(); //hardware.GetInfoBasedText(item.Index)[3];
+                string[] t = hardware.GetInfoBasedText(item.Index); //putting the info in a variable to avoid multiple calls of the function
+                item.SubItems[2].Text = t[2];
+                item.SubItems[3].Text = t[3];
             }
         }
         
@@ -326,14 +310,9 @@ namespace FormsTry1
         #region Main form load
         private void main_Form_Load(object sender, EventArgs e)
         {
-            AddItemDelegate addItem= new AddItemDelegate(loadCompTab);
-            
-            Thread ulist = new Thread(() => listView1.BeginInvoke(addItem, new object[] { this, e }));
-            ulist.Name = "YOU ARE MINE";
-            ulist.Start();
             textBoxFolder1.Text = "C:\\Users\\Itai Bieber\\Desktop\\1";
             textBoxFolder2.Text = "C:\\Users\\Itai Bieber\\Desktop\\2";
-
+            loadCompTab(this, e);
         }
         #endregion
 
@@ -341,12 +320,12 @@ namespace FormsTry1
         #region Components tab load
         private void loadCompTab(object sender, EventArgs e)
         {
-
-            listView1.Items.Add(new ListViewItem(HardwareData.GetProcessorInfo()));
-            //listView1.Columns[1].Width = TextRenderer.MeasureText(row[1], Font).Width; //Gets length of the "name" column
-            listView1.Items.Add(new ListViewItem(HardwareData.GetFanInfo()));
-            listView1.Items.Add(new ListViewItem(HardwareData.GetGpuInfo()));
-            timer1.Start();                              // Start the timer
+            for (int i = 0; i < 4; i++) //One must always make sure that i< than the number of components
+            {
+                listView1.Items.Add(new ListViewItem(hardware.GetInfoBasedText(i)));
+            }
+            ////listView1.Columns[1].Width = TextRenderer.MeasureText(row[1], Font).Width; //Gets length of the "name" column
+            
 
         }
         #endregion

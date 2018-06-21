@@ -82,7 +82,6 @@ namespace FormsTry1
                     cbox2.Text = Path.GetFileName(identicalFiles[i - 1][1]);
                     tableLayoutPanel1.Controls.Add(cbox2, 1, i);
                     cbox2.Name = string.Format("cbox_1_{0}", i);
-
                 }
 
             }
